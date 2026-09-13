@@ -40,14 +40,6 @@ body{
    
 }
 
-/* Tablets & Lager smartphones*/
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-  .section-card{ 
-   width: 80%;
-   
-  }
-}
-
 
 /* Laptops ,Larger tablets */
 @media (min-width: 769px) and (max-width:1279px ) {}
@@ -119,13 +111,56 @@ body{
    
    
   }
+
+  /* start about section   */
   .section-card .card-content{
     font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
     color: var(--main-color);
     font-size: 1.1rem;
     font-weight:200;
     
+  } 
+  /* end about section   */
+
+  /* start experience section    */
+  .section-card .experience-container{
+    display:flex;
+    flex-direction: column;
+    felx-wrap: wrap;
   }
+   .section-card .experience-container .experience-card{
+    margin-bottom: 20px;
+    overflow: hidden;
+        position: relative;
+
+   }
+   .timeline {
+  position: relative;
+  padding-left: 20px;
+  border-left: 2px solid #e5e7eb; /* الخط العمودي الرمادي */
+}
+.timeline .date {
+  color: #709775; /* لون السنة (الأخضر/الزيتي) */
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+ 
+
+
+  .experience-card h3{
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 1.2rem;
+    color: var(--main-color);
+  }
+  .experience-card p{
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 1rem;
+    color: var(--main-color); 
+  }
+  /* end experience section     */
+
+    /* start qualifications section   */
    
   .section-card .qual_card{
     display: flex;
@@ -180,7 +215,11 @@ body{
     flex-wrap: wrap;
     gap:40px;
     width: 90%;
-     padding: 40px 10px; 
+     padding: 20px 10px; 
+   }
+   .skills-container .skill-card:hover{
+    transform: scale(1.06);
+    
    }
    .skills-container .html5{
     color: var(--html--color);
@@ -202,9 +241,16 @@ body{
      font-size: 2.7rem;
 
     }
+
+    .skills-container .github{
+     color: black;
+     font-size: 2.7rem;
+
+    }
     .skills-container .skill-card p{
        color: var(--main-color);
        font-size: 1.5rem;
+       text-align: center;
     }
    /* end skills section */ 
   /* start projects section  */
@@ -225,6 +271,39 @@ body{
     background-color: var(--main-color);
   }
   /* end projects section  */
+/* start references section */
+.references-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 10px; 
+  }
+ .references-container .reference-card{
+    border-radius: 10px;
+    /* background-color: var(--bg-color); */
+    border: 1px solid var(--card-border);
+    padding: 20px;
+    width: 45%;
+    
+  }
+  .references-container .reference-card .reference-header{
+   font-size: 1rem;
+   color: var(--main-color);
+  }
+   .references-container .reference-card a{
+    text-decoration: none;
+    color:var(--main-color) ;
+    font-weight: 500;
+   } .references-container .reference-card span{
+    color: var(--text--dark);
+   }
+  .references-container .reference-card:hover{
+    transform: scale(1.05);
+    border-color: var(--main-color);
+    border-width: 3px;
+  }
+  
+/* end references section */
 /* end main */
 
 /* --------------- */
@@ -245,3 +324,11 @@ body{
     color: var(--accent-color);
 }
 /* end footer */
+
+/* Tablets & Lager smartphones*/
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+  .section-card{ 
+   width: 80%;
+   
+  }
+}
