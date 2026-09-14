@@ -35,7 +35,7 @@ body{
 
 
 /* Smaller Samrtphones*/
-@media (max-width: 479px) {
+/* @media (max-width: 479px) {
 .projects-container{
   flex-direction: column;
 
@@ -44,12 +44,49 @@ body{
   width: 100%;
 }
    
-}
+} */
 
 
 /* Laptops ,Larger tablets */
-@media (min-width: 769px) and (max-width:1279px ) {}
- 
+@media (min-width: 769px) and (max-width:1279px ) {
+  .section-card{
+    width: 90%;
+  }
+}
+ @media screen and (min-width: 481px) and (max-width: 768px) {
+  .section-card{ 
+   width: 80%;
+   
+  }
+} 
+@media (max-width: 480px) {
+  .section-card .qual_card{
+    flex-direction: column; 
+    
+  }
+  .section-card .projects-container{
+  flex-direction: column;
+  }  
+  .section-card .projects-container .project-card{
+    width: 100%;
+    margin: 0;
+  }
+  .section-card{
+    width: 95%;
+  }
+  .section-card .qual_card .qual_card_content{
+    width: 100%;
+    
+  }
+  .skills-container{
+    justify-content: flex-start;
+  }
+  .references-container{
+    flex-direction: column;
+    width:100vw;
+  }
+  
+   }
 
 /*Larger desktops and monitors*/
 @media (min-width: 1280px) {}
@@ -57,9 +94,7 @@ body{
 
 /* end media query */
 /* --------------------------------- */
-
-
-/* Start navbar */
+/* start navbar */
 .navbar{
     background-color:var(--main-color);
     color: white;
@@ -73,13 +108,61 @@ body{
 }
 .navbar-toggler {
     color:var(--text-light);
+     background-color: var(--text--dark);
+    overflow: hidden;
     
 }
+
 .navbar-brand{
     color: aliceblue;
 }
-/* End navbar */
 
+
+/* End navbar */
+ /* .hero-section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height:90vh;
+  text-align: center;
+  background-color: var(--main-color);
+  color: #ffffff;
+  padding: 50px 30px;
+  
+   }  */
+   
+ /* .hero-section .name{
+  font-size: 3rem;
+   color:#ffffff; }
+
+ /* .hero-section .job{
+  color: var(--secondary-color);
+  font-size: 1rem;
+ } */
+  
+ /* .hero-section .cont{
+  text-decoration: none;
+  border: 2px solid var(--card-border);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 10px;
+  color: var(--bg-color);
+ margin: 20px;
+ }
+ .hero-section .cv{
+  text-decoration: none;
+  border: 2px solid var(--card-border);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 10px;
+  color: var(--bg-color);
+ margin: 20px;
+ }
+ .hero-section .cont:hover ,.cv:hover{
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  transform: scale(1.05);
+ } */ 
 /* ----------- */
 /*start main  */
 
@@ -115,9 +198,14 @@ body{
     padding-bottom: 8px;
     border-radius: 2px;
    
-   
   }
-
+   /* start hero section */
+   .hero-section{
+    width:100% ;
+    margin:0px 0px 20px 0px;
+    background-color: var(--main-color);
+   }
+   /* end hero section */
   /* start about section   */
   .section-card .card-content{
     font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -209,27 +297,7 @@ body{
   }
 
 
-  @media (max-width: 480px) {
-  .section-card .qual_card{
-    flex-direction: column; 
-    
-  }
-  .section-card .projects-container{
-  flex-direction: column;
-  }  
-  .section-card .projects-container .project-card{
-    width: 100%;
-    margin: 0;
-  }
-  .section-card{
-    width: 95%;
-  }
-  .section-card .qual_card .qual_card_content{
-    width: 100%;
-    
-  }
   
-   }
   /* endqualifications section  */
    /* start skills section */
    .skills-container{
@@ -238,10 +306,10 @@ body{
     gap:40px;
     width: 90%;
      padding: 20px 10px; 
-     justify-content: space-evenly;
+     justify-content:space-between; 
    }
    .skills-container .skill-card:hover{
-    transform: scale(1.06);
+    transform: scale(1.2);
     
    }
    .skills-container .html5{
@@ -341,16 +409,19 @@ body{
    color: var(--main-color);
   }
    .references-container .reference-card a{
-    text-decoration: none;
-    color:var(--main-color) ;
+    text-decoration:underline;
+    
+    color:var(--teal) ;
     font-weight: 500;
    } .references-container .reference-card span{
     color: var(--text--dark);
+    font-size: 0.9rem;
    }
   .references-container .reference-card:hover{
     transform: scale(1.05);
-    border-color: var(--main-color);
-    border-width: 3px;
+    
+        border-left: 4px solid var(--teal);
+
   }
   
 /* end references section */
@@ -373,12 +444,8 @@ body{
 .footer i:hover ,i:active{
     color: var(--accent-color);
 }
+
 /* end footer */
 
 /* Tablets & Lager smartphones*/
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-  .section-card{ 
-   width: 80%;
-   
-  }
-}
+     
