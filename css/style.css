@@ -58,6 +58,9 @@ body{
    width: 80%;
    
   }
+  .hero-section .herotextc.name {
+    font-size: 2rem;
+  }
 } 
 @media (max-width: 480px) {
   .section-card .qual_card{
@@ -119,50 +122,60 @@ body{
 
 
 /* End navbar */
- /* .hero-section{
+
+  .hero-section{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  height:90vh;
+   height:90vh; 
   text-align: center;
-  background-color: var(--main-color);
   color: #ffffff;
-  padding: 50px 30px;
-  
-   }  */
-   
- /* .hero-section .name{
+  padding: 100px;
+  justify-content: space-between;
+  align-content: center; 
+  background-color:var(--main-color) !important;
+      overflow: hidden;
+
+   }  
+ .hero-section .name{
   font-size: 3rem;
    color:#ffffff; }
 
- /* .hero-section .job{
-  color: var(--secondary-color);
+  .hero-section .jop{
+    font-size: 1.5rem;
+    color: var(--text--dark);
+    margin:20px 0 40px 0;
+    padding: 10px;
+  }
+  .hero-section .herotext{
+    margin: 30px;
+  }
+  .hero-section .heroimage{
+  }
+ .hero-section .cont{
   font-size: 1rem;
- } */
-  
- /* .hero-section .cont{
   text-decoration: none;
   border: 2px solid var(--card-border);
   border-radius: 15px;
   width: fit-content;
   padding: 10px;
   color: var(--bg-color);
- margin: 20px;
+  margin-right: 10px;
  }
  .hero-section .cv{
+  font-size: 1rem;
   text-decoration: none;
   border: 2px solid var(--card-border);
   border-radius: 15px;
   width: fit-content;
   padding: 10px;
   color: var(--bg-color);
- margin: 20px;
+  margin-left: 10px;
  }
  .hero-section .cont:hover ,.cv:hover{
   background-color: var(--accent-color);
   color: var(--main-color);
   transform: scale(1.05);
- } */ 
+ } 
 /* ----------- */
 /*start main  */
 
